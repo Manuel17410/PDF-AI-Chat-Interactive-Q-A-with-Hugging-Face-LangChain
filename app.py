@@ -27,17 +27,17 @@ def get_pdf_text(pdf):
 
 def get_text_chunks(text):
     """Splits text into chunks."""
-    splitter = CharacterTextSplitter(separator="\n", chunk_size=1000, chunk_overlap=200)
+    splitter = CharacterTextSplitter(separator="\n", chunk_size=4000, chunk_overlap=1000)
     return splitter.split_text(text)
 
 def get_vectorstore(chunks):
     """Creates FAISS vectorstore from text chunks."""
-    embedding = HuggingFaceEmbeddings(model_name='all-MiniLM-L6-v2')
+    embedding = HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2')
     return FAISS.from_texts(chunks, embedding)
 
 def get_conversation_chain(vectorstore):
     """Initializes conversation model."""
-    llm = HuggingFaceHub(repo_id="google/flan-t5-base", model_kwargs={"temperature": 0.5, "max_length": 512})
+    llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature": 0.3, "max_length": 1024})
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
     return ConversationalRetrievalChain.from_llm(llm, retriever=vectorstore.as_retriever(), memory=memory)
 
@@ -86,7 +86,7 @@ def export_chat_to_pdf():
     chat_pdf.set_font("Arial", size=12)
     
     for message in st.session_state.chat_history:
-        chat_pdf.multi_cell(0, 10, message.content)
+        chat_pdf.multi_cell(0, 10, message.content.encode('latin-1', 'replace').decode('latin-1'))
     
     chat_pdf_output = "chat_log.pdf"
     chat_pdf.output(chat_pdf_output)
@@ -153,6 +153,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
