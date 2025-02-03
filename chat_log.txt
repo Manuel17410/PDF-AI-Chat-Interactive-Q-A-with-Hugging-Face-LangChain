@@ -1,2 +1,0 @@
-what is data science?
-Data science is the practice of using data to try to understand and solve real-world prob- lems.

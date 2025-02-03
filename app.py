@@ -142,7 +142,7 @@ def main():
     
     # If the user has typed a question
     if not listen_button:
-        user_question = st.text_input("💬 Ask about your document:", placeholder="Type your question here...")
+        user_question = st.text_input("💬 Chat & Extract Insights from PDFs:", placeholder="Type your question here...")
     
     if user_question:
         handle_userinput(user_question)
@@ -155,6 +155,10 @@ def main():
 
 if __name__ == '__main__':
     main()  # Run the app
+
+
+
+
 
 
 
