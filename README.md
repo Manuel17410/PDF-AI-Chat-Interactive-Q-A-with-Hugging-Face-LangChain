@@ -19,3 +19,14 @@ The application works through the following steps to generate answers the questi
 4. **Similarity Matching**: When you ask a question, the app compares it to the text segments and finds the ones most semantically similar.
 
 5. **Answer Generation**: The relevant text chunks are passed to the language model, which formulates a response based on the extracted information from the PDFs.
+
+## Frontend
+
+It is possible to:
+
+- Upload multiple PDF files
+- Select a specific PDF for targeted questions
+- Review the first page of any PDF
+- Ask questions by typing or speaking
+- Export the answers in either text or PDF format 
+
