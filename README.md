@@ -28,5 +28,7 @@ It is possible to:
 - Select a specific PDF for targeted questions
 - Review the first page of any PDF
 - Ask questions by typing or speaking
-- Export the answers in either text or PDF format 
+- Export the answers in either text or PDF format
+
+![Example Image](images/ChatbotFrontend.png)
 
