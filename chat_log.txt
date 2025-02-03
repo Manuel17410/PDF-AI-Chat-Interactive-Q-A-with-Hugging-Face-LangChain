@@ -1,10 +1,2 @@
-what is a data engineer?
-A data engineer may help build the data backend components of a
-what is a data scientist?
-With computer code, a data scientist can transformor aggregate data, run statistical analyses, or train machine learning models.
-will data science dissapear?
-There will be more specialization within data science, which may leadto the disappearance of the general title data scientist, but many companies are stillin the early stages of learning how to leverage data science and there’s plenty of workleft to do.
-what are different types of data science jobs?
-When looking for data science jobs, you should pay less attention to the job titlesand more to the job descriptions and what you’re asked in the interviews. Look at thebackgrounds of people in data science roles, such as what previous jobs they held andwhat their degrees are.
-can you be a data scientist without programming
-knowledge, expertise in a domain, and hacking skills (that is, coding)
+what is data science?
+Data science is the practice of using data to try to understand and solve real-world prob- lems.
