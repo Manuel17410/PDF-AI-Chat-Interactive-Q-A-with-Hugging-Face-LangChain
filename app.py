@@ -97,7 +97,7 @@ def main():
     load_dotenv()  # Load environment variables (e.g., API keys)
     st.set_page_config(page_title="PDF Q&A Assistant", page_icon=":books:", layout="wide")
     st.markdown(css, unsafe_allow_html=True)  # Apply custom CSS
-    st.title("📄 Chat with Multiple PDFs")
+    st.title("📄 Chat & Extract Insights from PDFs")
 
     # Initialize session state variables
     if "conversation" not in st.session_state:
@@ -142,7 +142,7 @@ def main():
     
     # If the user has typed a question
     if not listen_button:
-        user_question = st.text_input("💬 Chat & Extract Insights from PDFs:", placeholder="Type your question here...")
+        user_question = st.text_input("💬 Ask about your PDFs:", placeholder="Type your question here...")
     
     if user_question:
         handle_userinput(user_question)
