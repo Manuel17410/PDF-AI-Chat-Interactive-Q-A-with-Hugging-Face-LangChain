@@ -40,7 +40,13 @@ It is possible to:
 
 3- Get an HuggingFace key from HuggingFace and add it to the .env_secret file in the project directory:
 
-HUGGINGFACEHUB_API_TOKEN=
+HUGGINGFACEHUB_API_TOKEN= your_API
+
+4- Run the app using this command : streamlit run app.py
+
+5- The app will open in the browser, and then upload documents and ask questions about it.
+
+
 
 
 
