@@ -32,3 +32,18 @@ It is possible to:
 
 ![Example Image](images/ChatbotFrontend.png)
 
+## Installation and Use
+
+1- Copy the repository to your local machine by cloning it.
+
+2- Install the necessary dependencies by executing this command: pip install -r requirements.txt
+
+3- Get an HuggingFace key from HuggingFace and add it to the .env file in the project directory:
+
+HUGGINGFACEHUB_API_TOKEN=
+
+
+
+
+
+
