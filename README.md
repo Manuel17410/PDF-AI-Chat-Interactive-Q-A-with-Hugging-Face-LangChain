@@ -38,7 +38,7 @@ It is possible to:
 
 2- Install the necessary dependencies by executing this command: pip install -r requirements.txt
 
-3- Get an HuggingFace key from HuggingFace and add it to the .env_secret file in the project directory:
+3- Get an HuggingFace key from HuggingFace and add it to the .env_secret file in the project directory: (change the name of the file to .env otherwise it will not work)
 
 HUGGINGFACEHUB_API_TOKEN= your_API
 
