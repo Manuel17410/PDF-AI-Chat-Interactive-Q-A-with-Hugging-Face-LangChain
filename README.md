@@ -6,6 +6,14 @@ For more natural interactions, a more powerful GPU (which speeds up processing o
 
 Accessing a GPU and OpenAI’s models requires payment. Once paid, adapting the provided code for use with these resources would be straightforward, offering improved performance and the ability to handle more sophisticated queries.
 
+## Video Demonstration of the App on YouTube
+
+To give you a quick overview of how the app works, I’ve created a demonstration video. While setting up the app locally can take a few minutes and sometimes lead to dependency issues, this video allows you to experience the website without any setup.
+
+[![Watch the Demo](https://img.youtube.com/vi/R_fUTYp4lJ8/0.jpg)](https://www.youtube.com/watch?v=R_fUTYp4lJ8)
+
+Additionally, I am actively working on hosting the app on a cloud platform to make it even easier to access.
+
 ## Logic of the App (Backend explanation)
 
 The application works through the following steps to generate answers the questions:
